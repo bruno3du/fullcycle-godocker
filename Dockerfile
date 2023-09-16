@@ -8,7 +8,7 @@ COPY hello.go .
 RUN go build -o hello
 
 # Create a new release build stage
-FROM alpine:latest
+FROM scratch
 # Set the working directory to the root directory path
 WORKDIR /app
 # Copy over the binary built from the previous stage
